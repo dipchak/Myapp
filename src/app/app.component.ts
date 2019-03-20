@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from "../pages/login/login";
 import {RegisterPage} from "../pages/register/register";
+import { HistoryPage } from '../pages/history/history';
+import { CollectAmountPage } from '../pages/collect-amount/collect-amount';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,7 +16,7 @@ import {RegisterPage} from "../pages/register/register";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = CollectAmountPage;
 
   pages: Array<{title: string, component: any, icon: string;}>;
 
@@ -25,6 +27,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage, icon: 'home' },
       { title: 'Register', component: RegisterPage, icon: 'home' },
+      { title: 'History', component: HistoryPage, icon: 'home' },
       { title: 'List', component: ListPage, icon: 'home' }
     ];
 
