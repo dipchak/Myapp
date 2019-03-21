@@ -15,73 +15,52 @@
 
 <ion-content padding>
 
-    <ion-card>
+  <ion-card>
 
 
-          <ion-avatar item-start>
-            <img src="../../assets/imgs/avatar.jpeg">
-          </ion-avatar>
-
-      
-      
-        <ion-card-content>
-          <h2 class="title">Dip Chakraborty</h2>
-          <h3 class="rem_amt">Remaining Amount : $5000</h3>
-        </ion-card-content>
-      
-        <ion-row>
-          
+    <ion-avatar item-start>
+      <img src="../../assets/imgs/avatar.jpeg">
+    </ion-avatar>
 
 
-    <!-- Login form -->
-    <form class="list-form">
+
+    <ion-card-content>
+      <h2 class="title">Dip Chakraborty</h2>
+      <h3 class="rem_amt">Remaining Amount : $5000</h3>
+    </ion-card-content>
+
+    <ion-row>
+
+
+
+      <!-- Login form -->
+      <form class="list-form">
         <ion-item>
-          <ion-label floating>
-            <ion-icon name="Col-amt" item-start class="text-primary"></ion-icon>
-            Collection Amoutn
-          </ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input type="number" placeholder="Collection Amount"></ion-input>
         </ion-item>
-  
+<br>
+<br>
+
+        <ion-item class="checkbox">
+          <ion-label>No Collection</ion-label>
+          <ion-checkbox color="dark" checked="true"></ion-checkbox>
+        </ion-item>
+
         <ion-item>
-          <ion-label floating>
-            <ion-icon name="Comment" item-start class="text-primary"></ion-icon>
-            Password
-          </ion-label>
-          <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+          <ion-textarea placeholder="Comment"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <button ion-button icon-start block color="dark" tappable> Submit </button>
         </ion-item>
       </form>
 
-  
-      <div>
-        <button ion-button icon-start block color="dark" tappable">
-          <ion-icon name="log-in"></ion-icon>
-          Submit
-        </button>
-
-  
-      </div>
 
 
 
 
+    </ion-row>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </ion-row>
-      
-      </ion-card>
+  </ion-card>
 
 </ion-content>

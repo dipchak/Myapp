@@ -16,5 +16,45 @@ page-collect-amount {
             h3.rem_amt { font-size:1.5rem; text-align: center}
         }
 
+        form {
+            width:100%;
+            ion-item { padding-left: 0 !important;
+                &.checkbox { width: 90%; margin: 0 auto;
+                    ion-checkbox{
+                        margin-right: 15px !important;
+                    }
+                }
+                .item-inner {padding-right: 0 !important; border: none !important; box-shadow: none !important;
+                    ion-input { 
+                        input {
+                            width:90%; margin: 0 auto; background:color($colors, secondary); display: block; padding: 8px; border-radius: 5px; color:#fff;
+                            &::placeholder { 
+                                color: #fff;
+                                opacity: 1; 
+                            }
+                        }
+                    }
+
+                    ion-textarea { 
+                        textarea {
+                            width:90%; margin: 0 auto; background:color($colors, secondary); display: block; padding: 8px; border-radius: 5px; color:#fff;
+                            &::placeholder { 
+                                color: #fff;
+                                opacity: 1; 
+                            }
+                        }
+                    }
+
+                    
+
+                    ion-label {margin:15px auto; 
+                        button { width:60%; display: block; margin: 20px auto; padding: 8px !important; height:30px !important;  }
+                    }
+
+                }                
+            }
+            
+        }
+        
 
 }
