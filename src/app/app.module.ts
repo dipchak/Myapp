@@ -9,6 +9,8 @@ import {LoginPage} from "../pages/login/login";
 import {RegisterPage} from "../pages/register/register";
 import { HistoryPage } from '../pages/history/history';
 import { CollectAmountPage } from '../pages/collect-amount/collect-amount';
+import { ProfilePage } from '../pages/profile/profile';
+import { CollectionhistoryPage } from '../pages/collectionhistory/collectionhistory';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +23,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     RegisterPage,
     HistoryPage,
-    CollectAmountPage
+    CollectAmountPage,
+    ProfilePage,
+    CollectionhistoryPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     RegisterPage,
     HistoryPage,
-    CollectAmountPage
+    CollectAmountPage,
+    ProfilePage,
+    CollectionhistoryPage
   ],
   providers: [
     StatusBar,

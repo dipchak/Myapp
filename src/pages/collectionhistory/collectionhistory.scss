@@ -1,0 +1,45 @@
+page-collectionhistory {
+    table {
+        width: 100%;
+        .column1 {
+            width: 20%;
+            padding-left: 10px;
+            text-align: left
+        }
+        .column2 {
+            width: 45%;
+            text-align: center
+        }
+        .column3 {
+            width: 35%;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .head {
+                th {
+                    font-family: Lato-Bold;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    line-height: 1.4;
+                    background-color:color($colors, green) ;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+        }
+        
+        tr {
+            &:nth-child(even) {
+                background-color: #f8f6ff;
+            }
+            td {
+                font-family: Lato-Regular;
+                font-size: 15px;
+                color: #808080;
+                line-height: 1.4;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+}

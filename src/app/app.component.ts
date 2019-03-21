@@ -6,9 +6,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from "../pages/login/login";
-import {RegisterPage} from "../pages/register/register";
+import { RegisterPage} from "../pages/register/register";
 import { HistoryPage } from '../pages/history/history';
 import { CollectAmountPage } from '../pages/collect-amount/collect-amount';
+import { ProfilePage } from '../pages/profile/profile'; 
+import { CollectionhistoryPage } from '../pages/collectionhistory/collectionhistory';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +18,7 @@ import { CollectAmountPage } from '../pages/collect-amount/collect-amount';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CollectAmountPage;
+  rootPage: any = CollectionhistoryPage;
 
   pages: Array<{title: string, component: any, icon: string;}>;
 
@@ -28,7 +30,10 @@ export class MyApp {
       { title: 'Home', component: HomePage, icon: 'home' },
       { title: 'Register', component: RegisterPage, icon: 'home' },
       { title: 'History', component: HistoryPage, icon: 'home' },
-      { title: 'List', component: ListPage, icon: 'home' }
+      { title: 'Collect Amount', component: CollectAmountPage, icon: 'home' },
+      { title: 'Profile', component: ProfilePage, icon: 'home' },
+      { title: 'Collection History', component: CollectionhistoryPage, icon: 'home' },
+      
     ];
 
   }
