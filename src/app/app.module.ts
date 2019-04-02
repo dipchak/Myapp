@@ -8,9 +8,10 @@ import { ListPage } from '../pages/list/list';
 import {LoginPage} from "../pages/login/login";
 import {RegisterPage} from "../pages/register/register";
 import { HistoryPage } from '../pages/history/history';
-import { CollectAmountPage } from '../pages/collect-amount/collect-amount';
+import { CollectAmountPage } from '../pages/collect-amount/collect-amount';       
 import { ProfilePage } from '../pages/profile/profile';
 import { CollectionhistoryPage } from '../pages/collectionhistory/collectionhistory';
+import { DayEndCollectionPage } from '../pages/day-end-collection/day-end-collection';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HistoryPage,
     CollectAmountPage,
     ProfilePage,
-    CollectionhistoryPage
+    CollectionhistoryPage,
+    DayEndCollectionPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HistoryPage,
     CollectAmountPage,
     ProfilePage,
-    CollectionhistoryPage
+    CollectionhistoryPage,
+    DayEndCollectionPage
   ],
   providers: [
     StatusBar,

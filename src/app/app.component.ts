@@ -11,6 +11,7 @@ import { HistoryPage } from '../pages/history/history';
 import { CollectAmountPage } from '../pages/collect-amount/collect-amount';
 import { ProfilePage } from '../pages/profile/profile'; 
 import { CollectionhistoryPage } from '../pages/collectionhistory/collectionhistory';
+import { DayEndCollectionPage } from '../pages/day-end-collection/day-end-collection';
 
 @Component({
   templateUrl: 'app.html'
@@ -18,7 +19,7 @@ import { CollectionhistoryPage } from '../pages/collectionhistory/collectionhist
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CollectionhistoryPage;
+  rootPage: any = DayEndCollectionPage;
 
   pages: Array<{title: string, component: any, icon: string;}>;
 
@@ -33,6 +34,7 @@ export class MyApp {
       { title: 'Collect Amount', component: CollectAmountPage, icon: 'home' },
       { title: 'Profile', component: ProfilePage, icon: 'home' },
       { title: 'Collection History', component: CollectionhistoryPage, icon: 'home' },
+      { title: 'End Of the day collection', component: DayEndCollectionPage, icon: 'home' },
       
     ];
 
